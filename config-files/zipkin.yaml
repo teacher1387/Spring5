@@ -1,0 +1,4 @@
+info:
+name: "zipkin Test"
+purpose: "test Config Server"
+message: "zipkin"
