@@ -2,8 +2,8 @@
 server:
   port: 8888
 eureka:
-  client:
+client:
   serviceUrl:
     defaultZone: http://localhost:8761/eureka/
-  logging:
-  level: debug
+logging:
+    level: debug
