@@ -3,9 +3,10 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: service-name
     health-check-url-path: /actuator/health
-    status-page-url-path: /actuator/info    
+    status-page-url-path: /actuator/info 
+    eureka.instance.preferIpAddress: false
   client:
     registerWithEureka: false
     fetchRegistry: false
