@@ -14,20 +14,19 @@ logging:
   level:
     com.netflix.discovery: "ON"
     org.springframework.cloud: 'DEBUG'
-    
 
-
+---------------------------------------
 eureka:
   profiles: docker
   instance:
     hostname: eureka-server
     health-check-url-path: /actuator/health
-    status-page-url-path: /actuator/info 
+    status-page-url-path: /actuator/info
     eureka.instance.preferIpAddress: false
   client:
     registerWithEureka: false
     fetchRegistry: false
-logging:
-  level:
-    com.netflix.discovery: "ON"
-    org.springframework.cloud: 'DEBUG'
+  logging:
+   level:
+     com.netflix.discovery: "ON"
+     org.springframework.cloud: 'DEBUG'    
