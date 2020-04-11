@@ -1,4 +1,4 @@
-server:
+eserver:
   port: 8761
 
 eureka:
@@ -20,7 +20,7 @@ logging:
 eureka:
   profiles: docker
   instance:
-    hostname: localhost
+    hostname: eureka-server
     health-check-url-path: /actuator/health
     status-page-url-path: /actuator/info 
     eureka.instance.preferIpAddress: false
