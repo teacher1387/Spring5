@@ -8,11 +8,4 @@ client:
 logging:
     level: debug
 
-eureka:
-profiles: docker
-client:
-  serviceUrl:
-    defaultZone: http://eureka-server:8761/eureka/
-logging:
-    level: debug
 
