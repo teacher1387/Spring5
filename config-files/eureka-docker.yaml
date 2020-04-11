@@ -2,7 +2,6 @@ eserver:
   port: 8761
   
 eureka:
-  profiles: docker
   instance:
     hostname: eureka-server
     health-check-url-path: /actuator/health
