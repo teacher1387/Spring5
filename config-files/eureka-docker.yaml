@@ -1,0 +1,17 @@
+eserver:
+  port: 8761
+  
+eureka:
+  profiles: docker
+  instance:
+    hostname: eureka-server
+    health-check-url-path: /actuator/health
+    status-page-url-path: /actuator/info
+    preferIpAddress: false
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  logging:
+   level:
+     com.netflix.discovery: "ON"
+     org.springframework.cloud: 'DEBUG'    
