@@ -6,7 +6,7 @@ eureka:
     hostname: localhost
     health-check-url-path: /actuator/health
     status-page-url-path: /actuator/info 
-    eureka.instance.preferIpAddress: false
+    preferIpAddress: false
   client:
     registerWithEureka: false
     fetchRegistry: false
@@ -22,7 +22,7 @@ eureka:
     hostname: eureka-server
     health-check-url-path: /actuator/health
     status-page-url-path: /actuator/info
-    eureka.instance.preferIpAddress: false
+    preferIpAddress: false
   client:
     registerWithEureka: false
     fetchRegistry: false
