@@ -41,6 +41,12 @@ management:
       allowed-origins: "*"
       allowed-methods: GET,POST
 
+------------------------
+auth:
+  service: AUTH
+  path: /oauth/token
+---------------------------
+
 config:
   oauth2:
     privateKey: |
