@@ -19,6 +19,7 @@ spring:
   sleuth:
     annotation:
       enabled: true
+      
 
 config:
   oauth2:
