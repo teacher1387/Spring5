@@ -13,9 +13,9 @@ spring:
     mongodb:
       database: planes
       host: localhost
-#  oauth2:
-#    resource:
-#      userInfoUri: http://localhost:7778/credential      
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:7778/credential      
       
 eureka:
   client:
@@ -26,20 +26,20 @@ eureka:
     healthCheckUrlPath: /actuator/health
     instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     
-#management:
-  #security:
-    #enabled: false
-  #health:
-    #defaults: true
-    #sensitive: true
-  #endpoints:
-    #web:
-      #expose: "*"
-    #health:
-      #show-details: true
-    #cors:
-      #allowed-origins: "*"
-      #allowed-methods: GET,POST
+management:
+  security:
+    enabled: false
+  health:
+    defaults: true
+    sensitive: true
+  endpoints:
+    web:
+      expose: "*"
+    health:
+      show-details: true
+    cors:
+      allowed-origins: "*"
+      allowed-methods: GET,POST
 
 config:
   oauth2:
@@ -67,6 +67,3 @@ config:
       hL9dSAZuA8xExjlPmQIDAQAB
       -----END PUBLIC KEY-----
       
-security:
- basic:
-   enabled: false
