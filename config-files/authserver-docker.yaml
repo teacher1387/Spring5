@@ -20,10 +20,10 @@ spring:
     annotation:
       enabled: true
   data:
-    mongodb:
-      database: auth
-      host: mongo
-      port: 27017
+   mongodb:
+    host: mongo
+    port: 27017
+    database: auth
 
 config:
   oauth2:
