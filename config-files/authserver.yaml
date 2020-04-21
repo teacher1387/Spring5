@@ -21,13 +21,7 @@ spring:
       enabled: true
   data:
    mongodb:
-    authentication-database: admin
-    username: root
-    password: root
-    database: auth
-    port: 27017
-    host: mongo
-    
+    uri: mongodb://root:root@mongo:27017/auth
 
 config:
   oauth2:
