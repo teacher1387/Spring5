@@ -19,6 +19,11 @@ spring:
   sleuth:
     annotation:
       enabled: true
+  data:
+   mongodb:
+    host: mongo22
+    port: 27017
+    database: auth22
 
 config:
   oauth2:
