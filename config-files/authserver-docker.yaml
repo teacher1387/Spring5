@@ -19,7 +19,10 @@ spring:
   sleuth:
     annotation:
       enabled: true
-      
+  data:
+    mongodb:
+      database: auth
+      host: mongo
 
 config:
   oauth2:
