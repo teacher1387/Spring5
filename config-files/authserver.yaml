@@ -21,9 +21,12 @@ spring:
       enabled: true
   data:
    mongodb:
-    host: mongo
-    port: 27017
+    authentication-database: admin
+    username: root
+    password: root
     database: auth
+    port: 27017
+    host: mongo
     
 
 config:
