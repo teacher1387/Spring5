@@ -22,7 +22,7 @@ spring:
   data:
    mongodb:
     host: mongo22
-    port: 27017
+    port: 27018
     database: auth22
 
 config:
