@@ -23,6 +23,7 @@ spring:
     mongodb:
       database: auth
       host: mongo
+      port: 27017
 
 config:
   oauth2:
