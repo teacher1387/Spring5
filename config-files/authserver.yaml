@@ -24,6 +24,7 @@ spring:
     host: mongo22
     port: 27018
     database: auth22
+    uri: mongodb://user:secret@mongo1.example.com:12345,mongo2.example.com:23456/test25
 
 config:
   oauth2:
