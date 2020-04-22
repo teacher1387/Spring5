@@ -23,6 +23,7 @@ spring:
     mongodb:
       uri:  mongodb://user01:123456@localhost:27017/auth
 
+
 config:
   oauth2:
     privateKey: |
