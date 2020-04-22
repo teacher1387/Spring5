@@ -11,6 +11,9 @@ eureka:
     instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 spring:
+ data:
+  mongodb:
+   uri: mongodb://user01:123456@localhost:27017/auth
   rabbitmq:
     host: localhost
     port: 5672
@@ -19,9 +22,6 @@ spring:
   sleuth:
     annotation:
       enabled: true
-  data:
-   mongodb:
-    uri: mongodb://user01:123456@localhost:27017/auth
 
 config:
   oauth2:
