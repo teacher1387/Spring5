@@ -21,7 +21,7 @@ spring:
       enabled: true
   data:
     mongodb:
-      uri:  mongodb://user01:123456@mongo:27017/auth
+      uri: mongodb://user01:123456@mongo:27017/auth
 
 config:
   oauth2:
