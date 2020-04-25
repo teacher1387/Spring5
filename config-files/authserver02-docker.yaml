@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://eureka-server:8761/eureka/
   instance:
     statusPageUrlPath: /info
     healthCheckUrlPath: /health
@@ -12,7 +12,7 @@ eureka:
 
 spring:
   rabbitmq:
-    host: localhost
+    host: rabbitmq
     port: 5672
     username: guest
     password: guest
@@ -21,7 +21,7 @@ spring:
       enabled: true
   data:
     mongodb:
-      uri:  mongodb://user01:123456@localhost:27017/auth
+      uri:  mongodb://user01:123456@mongo:27017/auth
 
 config:
   oauth2:
