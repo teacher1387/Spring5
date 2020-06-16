@@ -41,9 +41,6 @@ management:
     cors:
       allowed-origins: "*"
       allowed-methods: GET,POST
-auth:
-  service: auth-service
-  path: /oauth/token
 
 config:
   oauth2:
