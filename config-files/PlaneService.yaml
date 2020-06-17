@@ -28,7 +28,7 @@ eureka:
     
 management:
   security:
-    enabled: true
+    enabled: false
   health:
     defaults: true
     sensitive: true
@@ -66,4 +66,3 @@ config:
       /myh1zM6m8cbL5cYFPyP099thbVxzJkjHWqywvQih/qOOjliomKbM9pxG8Z1dB26
       hL9dSAZuA8xExjlPmQIDAQAB
       -----END PUBLIC KEY-----
-      
