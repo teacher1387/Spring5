@@ -15,7 +15,7 @@ spring:
       host: localhost
   oauth2:
     resource:
-      userInfoUri: http://localhost:7778/credential      
+      userInfoUri: http://auth-server:7778/credential      
       
 eureka:
   client:
@@ -44,7 +44,7 @@ management:
 config:
   oauth2:
     resource:
-      userInfoUri: http://localhost:7778/credential
+      userInfoUri: http://auth-server:7778/credential
     privateKey: |
       -----BEGIN RSA PRIVATE KEY-----
       MIICXQIBAAKBgQDNQZKqTlO/+2b4ZdhqGJzGBDltb5PZmBz1ALN2YLvt341pH6i5
