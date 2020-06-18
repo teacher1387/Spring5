@@ -12,7 +12,7 @@ spring:
   data:
     mongodb:
       database: planes
-      host: localhost
+      host: mongo
   oauth2:
     resource:
       userInfoUri: http://auth-server:7778/credential      
