@@ -1,10 +1,13 @@
-server:
-  port: 8010
+turbine:
+  stream:
+    port: 8010
+  appConfig: planes,flights,fares,bookings,passengers,mail,payments
+  clusterNameExpression: 'default'
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka-server:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
   instance:
     statusPageUrlPath: /info
     healthCheckUrlPath: /health
@@ -12,10 +15,7 @@ eureka:
 
 spring:
   rabbitmq:
-    host: rabbitmq
+    host: localhost
     port: 5672
     username: guest
     password: guest
-  sleuth:
-    annotation:
-      enabled: true
