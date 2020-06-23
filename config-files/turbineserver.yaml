@@ -1,3 +1,6 @@
+server:
+  port: 8088
+  
 turbine:
   stream:
     port: 8010
