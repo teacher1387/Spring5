@@ -3,6 +3,12 @@ turbine:
     port: 8010
   appConfig: planes,flights,fares,bookings,passengers,mail,payments
   clusterNameExpression: 'default'
+  
+server:
+  port: 8989
+
+management:
+  port: 8990
 
 eureka:
   client:
