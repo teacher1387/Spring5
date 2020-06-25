@@ -1,0 +1,27 @@
+turbine:
+  stream:
+    port: 8010
+  appConfig: planes,flights,fares,bookings,passengers,mail,payments
+  clusterNameExpression: new String('default')
+  
+server:
+  port: 8989
+
+management:
+  port: 8990
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
