@@ -5,10 +5,7 @@ turbine:
   clusterNameExpression: new String('default')
   
 server:
-  port: 8989
-
-management:
-  port: 8990
+  port: 8009
 
 eureka:
   client:
