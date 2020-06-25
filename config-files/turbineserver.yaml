@@ -5,7 +5,7 @@ turbine:
   clusterNameExpression: new String('default')
   
 server:
-  port: 8010
+  port: 8989
 
 management:
   port: 8990
