@@ -5,7 +5,7 @@ turbine:
   clusterNameExpression: 'default'
   
 server:
-  port: 8989
+  port: 8008
 
 management:
   port: 8990
