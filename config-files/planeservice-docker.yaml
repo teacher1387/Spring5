@@ -15,7 +15,12 @@ spring:
       host: mongo
   oauth2:
     resource:
-      userInfoUri: http://auth-server:7778/credential      
+      userInfoUri: http://auth-server:7778/credential
+    cloud:
+    stream:
+      binding:
+        hystrixStreamOutput:
+          destination: turbineStreamInput
       
 eureka:
   client:
