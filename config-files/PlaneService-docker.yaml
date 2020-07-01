@@ -9,6 +9,11 @@ spring:
   sleuth:
     annotation:
       enabled: true
+  cloud:
+    stream:
+      binding:
+        hystrixStreamOutput:
+          destination: turbineStreamInput
   data:
     mongodb:
       database: planes
