@@ -15,12 +15,12 @@ spring:
       host: mongo
   oauth2:
     resource:
-      userInfoUri: http://auth:7778/credential
+      userInfoUri: http://auth-server:7778/credential
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://eureka-server:8761/eureka/
   instance:
     statusPageUrlPath: /actuator/info
     healthCheckUrlPath: /actuator/health
