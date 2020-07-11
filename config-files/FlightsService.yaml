@@ -21,6 +21,8 @@ spring:
       binding:
         hystrixStreamOutput:
           destination: turbineStreamInput
+  zipkin:
+    baseUrl:http://ZIPKIN/
 
 eureka:
   client:
