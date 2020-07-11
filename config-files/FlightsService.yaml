@@ -1,8 +1,8 @@
 
 server:
-  port: 50005
+  port: 50007
 spring:
-  rabbitmq:
+  rabbitmq:api/v2/spans
     host: localhost
     port: 5672
     username: guest
@@ -22,9 +22,9 @@ spring:
       binding:
         hystrixStreamOutput:
           destination: turbineStreamInput
-zipkin:
-  discoveryClientEnabled: false
-  baseUrl: http://localhost:9999/api/v2/spans
+  zipkin:
+    discoveryClientEnabled: false
+    baseUrl: http://localhost:9999/
 
 eureka:
   client:
