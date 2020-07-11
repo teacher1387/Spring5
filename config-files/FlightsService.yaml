@@ -23,7 +23,7 @@ spring:
         hystrixStreamOutput:
           destination: turbineStreamInput
 zipkin:
-  baseUrl: http://localhost:9999/
+  base-url: http://localhost:9999/
 
 eureka:
   client:
