@@ -2,7 +2,7 @@
 server:
   port: 50007
 spring:
-  rabbitmq:api/v2/spans
+  rabbitmq:
     host: localhost
     port: 5672
     username: guest
