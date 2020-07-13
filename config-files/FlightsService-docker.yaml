@@ -1,3 +1,4 @@
+
 server:
   port: 50006
 spring:
@@ -24,7 +25,7 @@ spring:
   zipkin:
     discoveryClientEnabled: false
     baseUrl: http://zipkin-server:9999/
-    
+
 eureka:
   client:
     serviceUrl:
@@ -45,10 +46,11 @@ bookings:
   oauth:
     client_id: f8374efd71270dc152a2941bd0d9bed6
     client_secret: da29f4b2ac608bdc8024b7ab084981fdf4014c16
-
+    
 auth:
   service: AUTH
   path: /oauth/token
+    
 
 config:
   oauth2:
