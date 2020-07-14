@@ -48,7 +48,7 @@ bookings:
     client_secret: da29f4b2ac608bdc8024b7ab084981fdf4014c16
     
 auth:
-  service: AUTH
+  service: AUTHSERVER02
   path: /oauth/token
     
 
