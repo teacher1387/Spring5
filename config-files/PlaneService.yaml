@@ -22,6 +22,7 @@ eureka:
     serviceUrl:
       defaultZone: http://127.0.0.1:8761/eureka/
   instance:
+    hostname: localhost
     statusPageUrlPath: /actuator/info
     healthCheckUrlPath: /actuator/health
     instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
