@@ -4,6 +4,8 @@ turbine:
   appConfig: PLANESERVICE,FLIGHTSSERVICE,fares,bookings,passengers,mail,payments
   clusterNameExpression: 'default'
 
+server:
+  port: 9009
 
 eureka:
   client:
