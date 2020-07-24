@@ -9,3 +9,16 @@ eureka:
     statusPageUrlPath: /info
     healthCheckUrlPath: /health
     instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    
+auth:
+  service: AUTHSERVER02
+  path: /oauth/token
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest  
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:7778/credential
