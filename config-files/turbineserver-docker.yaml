@@ -6,7 +6,10 @@ turbine:
 
 server:
   port: 9209
-
+  
+management:
+  port: 8990
+  
 eureka:
   client:
     serviceUrl:
