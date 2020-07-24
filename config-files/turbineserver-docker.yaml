@@ -5,7 +5,7 @@ turbine:
   clusterNameExpression: 'default'
 
 server:
-  port: 9009
+  port: 9209
 
 eureka:
   client:
